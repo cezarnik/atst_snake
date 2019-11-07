@@ -1,0 +1,3 @@
+/home/kolya/repos/atst_snake/test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/kolya/repos/atst_snake/test/cmake-build-debug/CMakeFiles/test.dir
+/home/kolya/repos/atst_snake/test/cmake-build-debug/CMakeFiles/edit_cache.dir

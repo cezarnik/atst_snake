@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="test"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/kolya/repos/atst_snake/test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/kolya/repos/atst_snake/test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option output="/home/kolya/repos/atst_snake/test/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kolya/repos/atst_snake/test/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DVERSION=&quot;1.1.1&quot;"/>
+					<Add option="-DPACKAGE=&quot;nsnake&quot;"/>
+					<Add option="-DDATE=&quot;07.11.2019&quot;"/>
+					<Add option="-DSYSTEM_LEVEL_DIR=&quot;/usr/share/games/nsnake/levels&quot;"/>
+					<Add directory="/home/kolya/repos/atst_snake/deps"/>
+					<Add directory="/home/kolya/repos/atst_snake"/>
+					<Add directory="/home/kolya/repos/atst_snake/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test/fast">
+				<Option output="/home/kolya/repos/atst_snake/test/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kolya/repos/atst_snake/test/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DVERSION=&quot;1.1.1&quot;"/>
+					<Add option="-DPACKAGE=&quot;nsnake&quot;"/>
+					<Add option="-DDATE=&quot;07.11.2019&quot;"/>
+					<Add option="-DSYSTEM_LEVEL_DIR=&quot;/usr/share/games/nsnake/levels&quot;"/>
+					<Add directory="/home/kolya/repos/atst_snake/deps"/>
+					<Add directory="/home/kolya/repos/atst_snake"/>
+					<Add directory="/home/kolya/repos/atst_snake/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/kolya/repos/atst_snake/test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kolya/repos/atst_snake/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/EngineGlobals.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/EngineGlobals.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Flow/StateManager.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Flow/StateManager.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Colors.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Colors.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Layout.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Layout.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Ncurses.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Ncurses.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Dialog.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Dialog.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Menu.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Menu.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Menu/MenuAlphabetic.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Menu/MenuAlphabetic.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Menu/MenuItem.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Menu/MenuItem.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Menu/MenuItem/MenuItemCheckbox.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Menu/MenuItem/MenuItemCheckbox.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Menu/MenuItem/MenuItemLabel.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Menu/MenuItem/MenuItemLabel.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Menu/MenuItem/MenuItemNumberbox.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Menu/MenuItem/MenuItemNumberbox.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Menu/MenuItem/MenuItemTextbox.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Menu/MenuItem/MenuItemTextbox.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Menu/MenuItem/MenuItemTextlist.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Widgets/Menu/MenuItem/MenuItemTextlist.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Window.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Graphics/Window.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Helpers/Base64.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Helpers/Base64.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Helpers/File.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Helpers/File.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Helpers/INI.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Helpers/INI.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Helpers/String.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Helpers/String.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Helpers/Timer.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Helpers/Timer.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Helpers/Utils.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/Helpers/Utils.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/InputManager.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/Engine/InputManager.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/commander/commander.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/deps/commander/commander.h">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Config/Arguments.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Config/Arguments.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Config/Globals.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Config/Globals.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Display/Animations/AnimationFire.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Display/Animations/AnimationFire.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Display/Animations/AnimationGameOfLife.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Display/Animations/AnimationGameOfLife.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Display/Animations/AnimationSnakes.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Display/Animations/AnimationSnakes.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Display/Animations/AnimationWater.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Display/Animations/AnimationWater.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Display/Layouts/LayoutFirstTime.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Display/Layouts/LayoutFirstTime.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Display/Layouts/LayoutGame.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Display/Layouts/LayoutGame.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Display/Layouts/LayoutMainMenu.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Display/Layouts/LayoutMainMenu.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Display/WindowGameHelp.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Display/WindowGameHelp.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Entities/Board.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Entities/Board.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Entities/BoardParser.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Entities/BoardParser.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Entities/FruitManager.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Entities/FruitManager.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Entities/Game.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Entities/Game.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Entities/Player.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Entities/Player.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Entities/ScoreFile.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/Entities/ScoreFile.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/States/GameStateGame.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/States/GameStateGame.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/States/GameStateMainMenu.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/src/States/GameStateMainMenu.hpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/test/test.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/kolya/repos/atst_snake/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

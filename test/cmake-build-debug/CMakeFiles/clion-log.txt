@@ -1,0 +1,4 @@
+/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /home/kolya/repos/atst_snake/test
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/kolya/repos/atst_snake/test/cmake-build-debug
