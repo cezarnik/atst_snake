@@ -1,7 +1,7 @@
 //
 // Created by kolya on 07.11.19.
 //
-#include <src/Config/Globals.hpp>
+#include "src/Config/Globals.hpp"
 #include <src/Entities/FruitManager.hpp>
 #include <src/Entities/Board.hpp>
 #include <src/Entities/Player.hpp>
@@ -21,6 +21,38 @@ void testAppleCount() {
         fruitManager.update(&player, &board);
         assert(fruitManager.getAmount() == fruits);
     }
+}
+
+void testMoveUp() {
+    Board board(10, 10, Board::Style::SOLID);
+    Player player(5, 5);
+    player.currentDirection = Player::UP;
+    player.update(&board);
+    assert(player.getX() == 5 && player.getY() == 4);
+}
+
+void testMoveDown() {
+    Board board(10, 10, Board::Style::SOLID);
+    Player player(5, 5);
+    player.currentDirection = Player::DOWN;
+    player.update(&board);
+    assert(player.getX() == 5 && player.getY() == 6);
+}
+
+void testMoveLeft() {
+    Board board(10, 10, Board::Style::SOLID);
+    Player player(5, 5);
+    player.currentDirection = Player::LEFT;
+    player.update(&board);
+    assert(player.getX() == 4 && player.getY() == 5);
+}
+
+void testMoveRight() {
+    Board board(10, 10, Board::Style::SOLID);
+    Player player(5, 5);
+    player.currentDirection = Player::RIGHT;
+    player.update(&board);
+    assert(player.getX() == 6 && player.getY() == 5);
 }
 
 void testWalls() {
@@ -145,7 +177,13 @@ void testWalls() {
     }
 }
 
+void test
+
 int main() {
     testAppleCount();
     testWalls();
+    testMoveUp();
+    testMoveDown();
+    testMoveLeft();
+    testMoveRight();
 }
