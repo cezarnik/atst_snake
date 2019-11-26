@@ -1,5 +1,8 @@
 from pynput.keyboard import Key, Controller
 import time
+import argparse
+
+
 
 def press_n(keyboard, key, n_times, delay=0.2):
     for i in range(n_times):
@@ -26,6 +29,8 @@ def go_to_main_menu_param(keyboard, param):
     press_n(keyboard, Key.page_up, 1)
     press_n(keyboard, Key.down, possible_params[param])
     press_n(keyboard, Key.enter, 1)
+    # if param=='arcade_mode':
+    #     press_n(keyboard, Key.enter, 1)
 
 
 def go_to_settings_param(keyboard, param): # should be in settings
@@ -77,18 +82,175 @@ def process_command(keyboard, command): # main_menu:param or settings:[param:val
         go_to_main_menu_param(keyboard, command[1])
 
 def test(keyboard, commands): # main menu
-    launch_game(keyboard)
+    
     for command in commands:
         process_command(keyboard, command)
+    
+
+def test_13(keyboard):
+    launch_game(keyboard)
+    test(keyboard, ['main_menu:arcade_mode'])
+    time.sleep(5)
+    press_n(keyboard, Key.left, 1)
+    press_n(keyboard, Key.enter, 1)
+    test(keyboard, ['main_menu:game_settings', 
+        'game_settings:fruits:1', 
+        'game_settings:back', 
+        'main_menu:arcade_mode'])
+    time.sleep(5)
     exit_game(keyboard)
+
+def test_14(keyboard):
+    launch_game(keyboard)
+    test(keyboard, ['main_menu:game_settings',
+        'game_settings:fruits:10',
+        'game_settings:back',
+        'main_menu:arcade_mode'])
+
+def test_16(keyboard):
+    launch_game(keyboard)
+    test(keyboard, ['main_menu:game_settings',
+        'game_settings:teleport:2',
+        'game_settings:back',
+        'main_menu:arcade_mode'])
+    time.sleep(5)
+    press_n(keyboard, Key.left, 1)    
+    press_n(keyboard, Key.enter, 1)    
+    test(keyboard, ['main_menu:game_settings',
+        'game_settings:teleport:1',
+        'game_settings:back',
+        'main_menu:arcade_mode'])
+    time.sleep(5)
+
+def test_17(keyboard):
+    launch_game(keyboard)
+    test(keyboard, ['main_menu:game_settings',
+        'game_settings:teleport:1',
+        'game_settings:back',
+        'main_menu:arcade_mode'])
+    time.sleep(5)
+    press_n(keyboard, Key.left, 1)    
+    press_n(keyboard, Key.enter, 1)    
+    test(keyboard, ['main_menu:game_settings',
+        'game_settings:teleport:2',
+        'game_settings:back',
+        'main_menu:arcade_mode'])
+    time.sleep(5)
+
+def test_18(keyboard):
+    launch_game(keyboard)
+    test(keyboard, ['main_menu:game_settings',
+        'game_settings:random_walls:2',
+        'game_settings:back',
+        'main_menu:arcade_mode'])
+    time.sleep(5)
+    press_n(keyboard, Key.left, 1)    
+    press_n(keyboard, Key.enter, 1)    
+    test(keyboard, ['main_menu:game_settings',
+        'game_settings:random_walls:1',
+        'game_settings:back',
+        'main_menu:arcade_mode'])
+    time.sleep(5)
+
+def test_19(keyboard):
+    launch_game(keyboard)
+    test(keyboard, ['main_menu:game_settings',
+        'game_settings:random_walls:1',
+        'game_settings:back',
+        'main_menu:arcade_mode'])
+    time.sleep(5)
+    press_n(keyboard, Key.left, 1)    
+    press_n(keyboard, Key.enter, 1)    
+    test(keyboard, ['main_menu:game_settings',
+        'game_settings:random_walls:2',
+        'game_settings:back',
+        'main_menu:arcade_mode'])
+    time.sleep(5)
+
+
+def test_20(keyboard):
+    launch_game(keyboard)
+    test(keyboard, ['main_menu:help'])
+    time.sleep(2)    
+    press_n(keyboard, Key.enter, 1)    
+    test(keyboard, ['main_menu:arcade_mode'])
+    time.sleep(5)
+
+
+def test_21(keyboard):
+    launch_game(keyboard)
+
+    test(keyboard, ['main_menu:game_settings',
+        'game_settings:random_walls:2',
+        'game_settings:back',
+        'main_menu:level_select'])
+    press_n(keyboard, Key.down, 2)
+    press_n(keyboard, Key.enter, 1)
+    time.sleep(5)
+    press_n(keyboard, Key.left, 1)
+    press_n(keyboard, Key.enter, 1)
+    test(keyboard, ['main_menu:game_settings',
+                    'game_settings:random_walls:1',
+                    'game_settings:back',
+                    'main_menu:level_select'])
+    press_n(keyboard, Key.down, 2)
+    press_n(keyboard, Key.enter, 1)
+    time.sleep(5)
+
+
+def test_22(keyboard):
+    launch_game(keyboard)
+
+    test(keyboard, ['main_menu:game_settings',
+        'game_settings:random_walls:1',
+        'game_settings:back',
+        'main_menu:level_select'])
+    press_n(keyboard, Key.down, 2)
+    press_n(keyboard, Key.enter, 1)
+    time.sleep(5)
+    press_n(keyboard, Key.left, 1)
+    press_n(keyboard, Key.enter, 1)
+    test(keyboard, ['main_menu:game_settings',
+                    'game_settings:random_walls:2',
+                    'game_settings:back',
+                    'main_menu:level_select'])
+    press_n(keyboard, Key.down, 2)
+    press_n(keyboard, Key.enter, 1)
+    time.sleep(5)
+
+
+def test_22(keyboard):
+    launch_game(keyboard)
+
+    test(keyboard, ['main_menu:level_select'])
+    press_n(keyboard, Key.down, 2)
+    press_n(keyboard, Key.enter, 1)
+    time.sleep(5)
+    press_n(keyboard, Key.left, 1)
+    press_n(keyboard, Key.enter, 1)
+
+    test(keyboard, ['main_menu:game_settings',
+                    'game_settings:fruits:99',
+                    'game_settings:back',
+                    'main_menu:level_select'])
+    press_n(keyboard, Key.down, 2)
+    press_n(keyboard, Key.enter, 1)
+    time.sleep(5)    
+    press_n(keyboard, Key.left, 1)
+    press_n(keyboard, Key.enter, 1)
+    test(keyboard, ['main_menu:arcade_mode'])
+    time.sleep(5)
+
+
+parser = argparse.ArgumentParser(description='Tool automating the nsnake app test')
+parser.add_argument('test_number', type=str)
+
 
 if __name__ == '__main__':
 
-    keyboard = Controller()  
-    launch_game(keyboard)
-    process_command(keyboard, 'main_menu:game_settings')
-    process_command(keyboard, 'game_settings:starting_speed:7')
-    process_command(keyboard, 'game_settings:fruits:27')
-    process_command(keyboard, 'game_settings:erase_high_scores')
+    args = parser.parse_args()
+    glob = globals()
+    keyboard = Controller()    
+    glob[args.test_number](keyboard)
 
 #press_n(keyboard, Key.down, 1)
